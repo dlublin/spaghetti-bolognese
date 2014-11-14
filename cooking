@@ -1,29 +1,34 @@
 //1 hour preparation time but the longer you can leave the sauce to simmer the better
 //it gets all great and stewy
 //should make enough for dinner and a serve for the freezer
+//branched vegetarian version
 
-garlic = 2 cloves;
+celery = 1 stalk;
 cans of whole tomatos (roma) = 2;
 tomato paste = 1 packet;
 medium size onion = 1;
 carrot = 1;
-grams of ground beef = 500;
+grams of fresh wild mushrooms = 500;
+red cooking wine = 1/2 cup;
 parmsan cheese = reggiano(the good shit);
 spaghetti = 1 packet;
+starchy pasta water = 1/2 cup;
+heavy cream, tablespoons = 3;
 salt;
 pepper;
+drinking wine = 1 bottle;
 
-function saucePrep(onion, garlic, salt){
-    chop(garlic,onion);
+function saucePrep(onion, celery, salt){
+    chop(celery,onion, carrot);
     brown in pan
-    brown(meat)
-    (!burn(garlic));//<----------------IMPORTANT
-        if(garic==burnt||oniion==burnt){
+    brown(wild mushrooms)
+    (!burn(celery));//<----------------IMPORTANT
+        if(celery==burnt||oniion==burnt){
             restart();
         }else{
+            add(red wine);
             add(can of tomato);
             add(tomato paste);
-            chop(medium carrot);
             season to taste;
             delay(30);//minutes
         }
@@ -38,7 +43,7 @@ function chop(vegetable){
 
 function pasta(pasta, salt, water){
     water=large pot; //you can't have too much water!
-    boil(water); //its got to be really boiling yeah?
+    boil(water); //its got to be really boiling yeah? A ROLLING BOIL
     add salt //enough salt that it should almost taste like sea water
     add(packet of spagehetti);
     delay(8); //in minutes
@@ -46,15 +51,26 @@ function pasta(pasta, salt, water){
     if(overcook==true){
         pasta.restart();
     }
+    pasta water = remove(water, pasta);
     remove(pasta,stove); //pasta should still be a bit crunch in the middle
     drain;
     return pasta;
 }
 
+function finishSauce(){
+    //see sites like http://cooklikeyourgrandmother.com/how-to-finish-pasta/ for the science behind this
+    //essentially we're creating an emulsion
+    //the goal is to make the sauce stick to the pasta
+    warm(sauce);
+    combine(pasta water, sauce);
+    combine(heavy cream, sauce);
+    stir(sauce);
+}
+
 function party(friends, table, wine){
     call(friends);
     set(table);
-    open(wine);
+    open(drinking wine);
 }
 
 function serve(pasta, sauce){
@@ -69,6 +85,7 @@ dinner = saucePrep();
 if(saucePrep.isFinished.()){
     party();
     pasta();
+    finishSauce();
 }
 
 serve(spaghetti, dinner);
