@@ -16,6 +16,7 @@ pepper;
 function saucePrep(onion, garlic, salt){
     chop(garlic,onion);
     brown in pan
+    brown(meat)
     (!burn(garlic));//<----------------IMPORTANT
         if(garic==burnt||oniion==burnt){
             restart();
@@ -59,7 +60,7 @@ function party(friends, table, wine){
 function serve(pasta, sauce){
   yum=combine(pasta,sauce);
   grate(cheese);
-  add(cheese,yum)
+  add(cheese)//yum
   eat();
 }
 
