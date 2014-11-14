@@ -70,5 +70,5 @@ if(saucePrep.isFinished.()){
     pasta();
 }
 
-serve();
+serve(spaghetti, dinner);
 exit();
