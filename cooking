@@ -22,24 +22,24 @@ function saucePrep(onion, garlic, salt){
         }else{
             add(can of tomato);
             add(tomato paste);
-            grate(medium carrot);
+            chop(medium carrot);
             season to taste;
             delay(30);//minutes
         }
         return sauce;
 }
 
-function grate(carrot){
-    peel(carrot);
-    grate(carrot);
-    return grated;
+function chop(vegetable){
+    peel(vegetable);
+    cut up (vegetable); //pretty fine
+    return chopped vegetable;
 }
 
 function pasta(pasta, salt, water){
     water=large pot; //you can't have too much water!
     boil(water); //its got to be really boiling yeah?
     add salt //enough salt that it should almost taste like sea water
-    add(spagehetti);
+    add(packet of spagehetti);
     delay(8); //in minutes
     (!overcook);
     if(overcook==true){
