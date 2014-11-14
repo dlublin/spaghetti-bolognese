@@ -1,2 +1,3 @@
-My reciepe for good bolognese sauce.
-Forked irl from my dad aka Torty who is particularly good cook.
+Reciepe for good spagghetti bolognese.
+
+Forked irl from my dad (who is particularly good cook).
