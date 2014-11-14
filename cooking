@@ -14,24 +14,25 @@ salt;
 pepper;
 
 function saucePrep(onion, garlic, salt){
-    chop garlic and onion;
+    chop(garlic,onion);
     brown in pan
-    (!burn the garlic);//<----------------IMPORTANT
+    (!burn(garlic));//<----------------IMPORTANT
         if(garic==burnt||oniion==burnt){
             restart();
         }else{
-            add cans of tomato;
-            add tomato paste;
-            carrot();
+            add(can of tomato);
+            add(tomato paste);
+            grate(medium carrot);
             season to taste;
             delay(30);//minutes
         }
-        return = sauce;
+        return sauce;
 }
 
-function carrotPrep(carrot){
-    peel carrot
-    grate carrot
+function grate(carrot){
+    peel(carrot);
+    grate(carrot);
+    return grated;
 }
 
 function pasta(pasta, salt, water){
@@ -47,7 +48,6 @@ function pasta(pasta, salt, water){
     remove(pasta,stove); //pasta should still be a bit crunch in the middle
     drain;
     return pasta;
-
 }
 
 function party(friends, table, wine){
